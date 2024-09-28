@@ -22,6 +22,11 @@ export default {
 header {
   background-color: #42b983;
   padding: 1rem 2rem;
+  top: 0;
+  position: fixed;
+  margin-left: -2rem;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav {
@@ -35,6 +40,7 @@ nav {
 }
 
 .nav-links {
+  margin-right: 2rem;
   display: flex;
   list-style: none;
 }

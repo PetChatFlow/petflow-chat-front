@@ -32,6 +32,10 @@ footer {
   background-color: #333;
   color: white;
   padding: 2rem;
+  margin-bottom: -3rem;
+  margin-left: -2rem;
+  width: 100%;
+  z-index: 1000;
 }
 
 .footer-content {
@@ -39,6 +43,20 @@ footer {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.contato {
+  max-width: 300px;
+}
+
+.contato h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contato p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
 }
 
 .redes-sociais a {
