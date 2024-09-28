@@ -10,6 +10,7 @@
       </ul>
     </nav>
   </header>
+  <hr class="header-line" />
 </template>
 
 <script>
@@ -21,12 +22,17 @@ export default {
 <style scoped>
 header {
   background-color: #42b983;
+  margin-top: -1rem;
   padding: 1rem 2rem;
   top: 0;
-  position: fixed;
   margin-left: -2rem;
   width: 100%;
   z-index: 1000;
+}
+.header-line {
+  border: none;
+  border-top: 0.1px solid #ffffff;
+  margin: 0;
 }
 
 nav {

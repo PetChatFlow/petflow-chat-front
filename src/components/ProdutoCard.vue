@@ -1,5 +1,6 @@
 <template>
   <div class="produto-card">
+    <img :src="produto.imagem" :alt="produto.nome" />
     <h3>{{ produto.nome }}</h3>
     <p class="preco">R$ {{ produto.preco.toFixed(2) }}</p>
     <button>Adicionar ao Carrinho</button>
@@ -10,7 +11,10 @@
 export default {
   name: "ProdutoCard",
   props: {
-    produto: Object,
+    produto: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -22,6 +26,11 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
 }
 
 .produto-card img {
@@ -30,6 +39,11 @@ export default {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #333;
 }
 
 .preco {

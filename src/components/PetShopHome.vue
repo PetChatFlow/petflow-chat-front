@@ -35,6 +35,11 @@ import ServicoCard from "./ServicoCard.vue";
 import ProdutoCard from "./ProdutoCard.vue";
 import FooterView from "./FooterView.vue";
 
+import racaoPremium from "@/assets/racao-premium.jpg";
+import brinquedoInterativo from "@/assets/brinquedo-interativo.jpg";
+import coleiraPersonalizada from "@/assets/coleira-personalizada.jpg";
+import camaOrtopedica from "@/assets/cama-ortopedica.jpg";
+
 export default {
   name: "PetshopHome",
   components: {
@@ -78,24 +83,28 @@ export default {
           nome: "Ração Premium",
           preco: 89.9,
           descricao: "Nutrição balanceada para seu pet",
+          imagem: racaoPremium,
         },
         {
           id: 2,
           nome: "Brinquedo Interativo",
           preco: 39.9,
           descricao: "Diversão e estímulo mental",
+          imagem: brinquedoInterativo,
         },
         {
           id: 3,
           nome: "Coleira Personalizada",
           preco: 29.9,
           descricao: "Estilo e segurança para seu pet",
+          imagem: coleiraPersonalizada,
         },
         {
           id: 4,
           nome: "Cama Ortopédica",
           preco: 149.9,
           descricao: "Conforto e suporte para seu pet",
+          imagem: camaOrtopedica,
         },
       ],
     };
