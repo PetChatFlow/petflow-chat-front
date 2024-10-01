@@ -112,16 +112,36 @@ export default {
 };
 </script>
 
+<style>
+/* Estilos globais */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+</style>
+
 <style scoped>
 .petshop-home {
   font-family: "Roboto", sans-serif;
   color: #333;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
+  flex: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 h2 {
@@ -150,7 +170,7 @@ section {
 
   .servicos-grid,
   .produtos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
   }
 }
