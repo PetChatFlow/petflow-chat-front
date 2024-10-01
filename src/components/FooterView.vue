@@ -32,10 +32,11 @@ footer {
   background-color: #333;
   color: white;
   padding: 2rem;
-  margin-bottom: -3rem;
-  margin-left: -2rem;
   width: 100%;
   z-index: 1000;
+  position: relative; /* Adicionado para garantir que o rodapé fique no final */
+  margin-top: -200px;
+  bottom: 0;
 }
 
 .footer-content {

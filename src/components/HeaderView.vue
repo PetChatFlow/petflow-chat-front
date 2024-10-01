@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style scoped>
+/* ... código existente ... */
+</style>
+<style scoped>
 header {
   background-color: #42b983;
   padding: 1rem 2rem;
@@ -30,7 +33,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Alinha o conteúdo do nav à direita */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -45,8 +48,6 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* Alinha os links à direita */
-  flex-grow: 1; /* Permite que a lista de links ocupe o espaço disponível */
 }
 
 .nav-links li {
@@ -81,7 +82,7 @@ nav {
   .nav-links {
     flex-direction: column;
     width: 100%;
-    align-items: flex-end; /* Alinha os links à direita em telas menores */
+    align-items: flex-start; /* Alinha os links à esquerda no modo responsivo */
   }
 
   .nav-links li {

@@ -3,7 +3,7 @@
     <HeaderView />
     <CarrosselView />
     <main>
-      <section class="servicos">
+      <section id="servicos" class="servicos">
         <h2>Nossos Serviços</h2>
         <div class="servicos-grid">
           <ServicoCard
@@ -13,7 +13,7 @@
           />
         </div>
       </section>
-      <section class="produtos">
+      <section id="produtos" class="produtos">
         <h2>Produtos em Destaque</h2>
         <div class="produtos-grid">
           <ProdutoCard
@@ -21,6 +21,16 @@
             :key="produto.id"
             :produto="produto"
           />
+        </div>
+      </section>
+      <section id="contato" class="contatos">
+        <!-- Adicionado id="contato" -->
+        <h2>Contato</h2>
+        <div class="contato-info">
+          <p>Telefone: (21) 9999-9999</p>
+          <p>E-mail: contato@petchatflow.com</p>
+          <p>Endereço: Rua dos Pets, 123</p>
+          <p>Horário: Seg-Sáb, 9h-19h</p>
         </div>
       </section>
     </main>
@@ -121,10 +131,15 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
+  height: 100%; /* Adicionado para garantir que o body ocupe toda a altura */
 }
-</style>
 
-<style scoped>
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .petshop-home {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -132,7 +147,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex: 1; /* Adicionado para garantir que o contêiner principal ocupe o espaço disponível */
 }
 
 main {
@@ -145,7 +160,7 @@ main {
 }
 
 h2 {
-  color: #4a4a4a;
+  color: #ffffff; /* Alterado para branco */
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -161,6 +176,11 @@ h2 {
 
 section {
   margin-bottom: 4rem;
+}
+
+.contato-info {
+  text-align: center;
+  color: #ffffff; /* Alterado para branco */
 }
 
 @media (max-width: 768px) {
